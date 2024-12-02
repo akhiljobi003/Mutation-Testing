@@ -12,18 +12,18 @@ We defined and applied the following mutation operators:
 * Method Removal: Removes a method from the class.
 
 ## Description of Applied Mutations and Their Impact
-Coefficient Change
+### Coefficient Change
 * Example: In __init__, self.coefficients = coefficients was mutated to self.coefficients = [c+1 for c in coefficients].
 * Impact: This mutation altered the fundamental representation of polynomials, potentially affecting all operations.
-Arithmetic Operation Swap
+### Arithmetic Operation Swap
 * Example: In __add__, a + b was changed to a - b.
 * Impact: This mutation inverted addition operations, significantly altering polynomial arithmetic.
-Comparison Operator Mutation
+### Comparison Operator Mutation
 * Example: In find_root_bisection, abs(self.evaluate(c)) < epsilon was changed to abs(self.evaluate(c)) <= epsilon.
 * Impact: This mutation could lead to premature termination of the root-finding algorithm.
-Zero Insertion
+### Zero Insertion
 * Example: In __init__, self.coefficients = + coefficients.
 * Impact: This mutation increased the degree of all polynomials by one, affecting string representation and arithmetic operations.
-Method Removal
+### Method Removal
 * Example: The entire evaluate method was removed.
 * Impact: This mutation broke functionality dependent on polynomial evaluation, including root finding.
