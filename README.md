@@ -27,3 +27,9 @@ We defined and applied the following mutation operators:
 ### Method Removal
 * Example: The entire evaluate method was removed.
 * Impact: This mutation broke functionality dependent on polynomial evaluation, including root finding.
+
+## Recommendations for Improving the Test Suite
+Based on the analysis, we recommend the following improvements:
+* Enhance Coefficient Testing: Add tests that compare polynomials with slightly different coefficients and verify their evaluations at multiple points.
+* Improve Arithmetic Tests: Implement more comprehensive tests for addition, subtraction, and multiplication, including edge cases like adding/subtracting a polynomial to/from itself.
+* Expand Edge Case Coverage: Include tests for zero polynomials, single-term polynomials, and polynomials with leading zero coefficients.
